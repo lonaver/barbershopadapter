@@ -1,0 +1,21 @@
+@import "./utils/variables";
+@import "./utils/reset";
+@import "./utils/total";
+@import "./utils/animation";
+
+// components
+@import "./components/header";
+@import "./components/mobile-menu";
+
+@import "./components/hero";
+@import "./components/section-about";
+@import "./components/section-price";
+@import "./components/section-why";
+@import "./components/section-employees";
+@import "./components/section-gallery";
+@import "./components/section-booking";
+@import "./components/section-booking-form";
+
+@import "./components/footer";
+
+@import "./components/modal";

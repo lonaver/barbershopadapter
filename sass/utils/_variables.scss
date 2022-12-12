@@ -1,0 +1,30 @@
+/* кольори */
+$color-prime-bacground: rgba(255, 255, 255);
+$color-text-prime: rgba(85, 85, 85);
+$color-accent: rgba(255, 108, 0);
+$color-subtitle-dark: rgba(157, 164, 189, 0.6);
+$color-herofooter-text: rgba(157, 164, 189, 1);
+$color-titleleft-text: rgba(48, 48, 48);
+$color-footer-forma-text: rgba(157, 164, 189, 0.4);
+$color-background-dark: rgba(17, 19, 25, 1);
+
+$color-background-secondary: rgba(247, 247, 247, 1);
+
+$color-hero-bcg: rgba(25, 28, 38, 0.2);
+/* bad $color-background-dark: rgb(25, 28, 38, 0.2); */
+/* шрифти
+  Open Sans 400 600
+  Raleway 700
+  */
+
+/* other */
+$indent: 30px;
+$item-bookinh: 2;
+
+$header-idx: 10;
+$modal-idx: 100;
+$menu-idx: 1000;
+
+$anim-fast: 300ms ease-out;
+$anim-slow: 800ms ease;
+$cubick-link: cubic-bezier(0.4, 0, 0.2, 1);

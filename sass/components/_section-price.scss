@@ -1,0 +1,186 @@
+/* prices dark */
+.section__prices {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $color-background-dark;
+  /* for backgrond img */
+  max-width: 480px;
+  @media screen and (min-width: 480px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    // max-width: 100%;
+  }
+  background-image: 
+  // linear-gradient(to right, &color-hero-bcg, &color-hero-bcg),
+    // url("../images/PricesBCG.png");
+    url("../images/prices/img480_480@1x-min.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url("../images/prices/img480_480@2x-min.png");
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    background-image: url("../images/prices/img768_768@1x-min.png");
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url("../images/prices/img768_768@1x-min.png");
+    }
+  }
+  @media screen and (min-width: 768px) {
+    background-image: url("../images/prices/img1200_1600@1x-min.png");
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url("../images/prices/img1200_1600@1x-min.png");
+    }
+  }
+  // outline: 2px solid tomato;
+}
+.container__prices {
+  display: block;
+  padding-top: 84px;
+  padding-bottom: 84px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  /* outline: 2px solid tomato; */
+  & .title-second {
+    margin-top: 20px;
+    margin-bottom: 44px;
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+  }
+}
+.prices__title-second {
+  font-family: "Raleway";
+  // font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  /* identical to box height */
+
+  letter-spacing: 0.05em;
+  @media screen and (min-width: 768px) {
+    font-size: 40px;
+    line-height: calc(47 / 40);
+  }
+}
+.prices__title-second--position {
+  margin-top: 20px;
+  margin-bottom: 44px;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.price__subtext {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(20 / 14);
+  /* or 186% */
+  letter-spacing: 0.02em;
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: calc(30 / 18);
+  }
+}
+
+.price__btn {
+  display: block;
+  margin-top: 44px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.prices__lists {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: $indent;
+  @media screen and (max-width: 1199px) {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+.price__list {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+  padding-right: 20px;
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    min-width: 418px;
+    max-width: 703px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 40px 32px;
+    min-width: 703px;
+    max-width: 703px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 570px;
+    // max-width: 100%;
+    // min-width: 100%;
+    padding: 30px 20px;
+  }
+  /* outline: 2px solid tomato; */
+  &:first-child {
+    padding-bottom: 0px;
+    @media screen and (max-width: 767px) {
+      background-image: linear-gradient(
+        180deg,
+        rgb(9, 11, 19) 0%,
+        rgba(9, 11, 19) 100%
+      );
+    }
+    background-image: linear-gradient(
+      180deg,
+      rgb(23, 26, 36) 0%,
+      rgba(23, 26, 36, 0.2) 100%
+    );
+  }
+  &:last-child {
+    padding-top: 0px;
+
+    background-image: linear-gradient(
+      180deg,
+      rgb(9, 11, 19) 0%,
+      rgba(9, 11, 19, 0.2) 100%
+    );
+  }
+}
+.price__item {
+  display: flex;
+  align-items: baseline;
+  &::before {
+    display: inline-block;
+    content: "";
+    height: 1px;
+    width: 1px;
+    flex-grow: 1;
+    margin-left: 12px;
+    margin-right: 12px;
+    background: rgba(157, 164, 189, 0.12);
+  }
+  &:not(last-child) {
+    margin-bottom: 20px;
+  }
+}
+.price__span {
+  order: -1;
+}
+/* prices dark*/

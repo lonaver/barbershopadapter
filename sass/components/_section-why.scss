@@ -1,0 +1,128 @@
+/* why light */
+.container__why {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 44px;
+
+  @media screen and (max-width: 1199px) {
+    flex-direction: column;
+    // align-items: center;
+  }
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 84px;
+  padding-bottom: 84px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 120px;
+    padding-bottom: 129px;
+    gap: $indent;
+  }
+
+  /* outline: 2px solid tomato; */
+}
+
+.why__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  width: 400px;
+
+  gap: 30px;
+  @media screen and (max-width: 1199px) {
+    order: 2;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: auto;
+    width: 400px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+    width: 400px;
+  }
+
+  // outline: 2px solid rgb(86, 71, 255);
+}
+.why__item {
+  display: inline-block;
+  padding: 20px 24px;
+  width: calc((100% - 30px - $indent) / $item-bookinh);
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
+  height: 133px;
+  text-align: center;
+  background-color: $color-background-secondary;
+  &:nth-child(2n) {
+    margin-top: 30px;
+  }
+}
+.why__subtitle {
+  display: inline-block;
+  position: relative;
+
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc(57 / 42);
+  letter-spacing: 0.05em;
+}
+
+.why__icon {
+  position: absolute;
+  right: -16px;
+  top: 15px;
+}
+.why__text {
+  font-size: 11px;
+  line-height: calc(15 / 11);
+}
+
+.why-description {
+  @media screen and (max-width: 1199px) {
+    order: 1;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* outline: 2px solid rgb(74, 255, 71); */
+  & .subtitle-second {
+    text-align: left;
+    @media screen and (min-width: 480px) {
+      width: 430px;
+    }
+    @media screen and (max-width: 767px) {
+      // max-width: 418px;
+      text-align: left;
+    }
+  }
+}
+
+.why-description__text {
+  display: inline-block;
+  max-width: 418px;
+  // font-family: "Open Sans";
+  // font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  /* or 167% */
+
+  letter-spacing: 0.02em;
+
+  color: $color-text-prime;
+  @media screen and (min-width: 768px) {
+    max-width: 100%;
+    width: 500px;
+  }
+  text-align: left;
+}
+/* why  light*/
