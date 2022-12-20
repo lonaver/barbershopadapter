@@ -70,8 +70,7 @@
       ),
       url("../images/booking/Bg1200_785@1x-min.png");
     background-repeat: no-repeat;
-    background-position-x: calc(40vw + 30px);
-    background-position-y: 50%;
+    background-position: left calc(50vw + 0px) top 50%;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
